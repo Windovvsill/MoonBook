@@ -9,7 +9,7 @@
 </svelte:head>
 
 <div class="blog">
-	<Header>The Simple Mental Model for Mastering Complex React State</Header>
+	<!-- <Header>The Simple Mental Model for Mastering Complex React State</Header>
 
 	<p>
 		For developers who are new to React, there are several pitfalls that you will eventually fall
@@ -33,39 +33,8 @@
 	<Code
 		code={`#export #const $Feed #= %props #=> %{
     const { ^feed@, profileId, ...rest } = props;
-
-    const { FEED_TOP_ENABLED } = useConfig();
-
-    const extraPostSource = useMemo(() => (FEED_TOP_ENABLED ? extraPostSourcesConfig : {}), [FEED_TOP_ENABLED]);
-
-    const id = feed === NamedFeeds.FOLLOWING ? profileId : feed;
-    const canShowPinned = feedsPinned.includes(feed);
-
-    /**
-    * Returns what type of pin action can be performed on feed item
-    */
-    const getPinAction = (item: IPostable<any>, isPinned?: boolean): PinActions => {
-        // if the post is pinned and we're the owner allow unpinning
-        return isPinned && item.ownerId === profileId ? PinActions.UNPIN : null;
-    };
-
-    const fetchFeed = opts => {
-        return postService.fetchFeed(id, opts);
-    };
-
-    return (
-        <PostList
-        {...rest}
-        feed={feed}
-        getPinnedPosts={canShowPinned && getPinnedPosts}
-        getExtraPosts={extraPostSource[feed]}
-        getPinAction={getPinAction}
-        fetchPosts={fetchFeed}
-        filterOptimistic={filterOptimistic(feed)}
-        />
-    );
 };`}
-	/>
+	/> -->
 </div>
 
 <style>
