@@ -9,7 +9,8 @@
 	--secondary-color: #12084a;
 	--tertiary-color: #223977;
 	--accent-color: #e11f5d;
-	--heading-color: rgba(231, 236, 219, 0.7);
+	--heading-color: rgb(255, 254, 237);
+	--heading-second-color: rgb(255, 255, 234);
 	--text-color: #f1f1ee;
 	--background-without-opacity: rgba(1, 5, 68, 0.7);
 	--column-width: 42rem;

@@ -63,6 +63,7 @@
 		/* height: 25vh; */
 		margin: 0;
 		padding: 0;
+		pointer-events: none;
 	}
 
 	.Header {
